@@ -1036,4 +1036,116 @@ button {
     border: none;
   }
 }
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: #6bc2f1;
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: testimonials;
+}
+
+.testimonials__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials__slider {
+  display: inline-block;
+  position: absolute;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.testimonials__slider__arrow {
+  position: relative;
+}
+
+.testimonials__slider__arrow-right {
+  left: 124px;
+}
+
+@media (max-width: 992px) {
+  .testimonials__slider__arrow-right {
+    left: 236px;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonials__slider__arrow-right {
+    left: 136px;
+  }
+}
+
+.testimonials__slider img {
+  width: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.testimonials-card__box {
+  display: none;
+  width: 50%;
+  margin: 10px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.5;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+  color: #fff;
+}
+
+.testimonials-card__box_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.5;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+  color: #fff;
+}
+
+.testimonials-card__name {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.testimonials-card__company {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #7A57D1;
+}
+
+.testimonials-card__img {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
 /*# sourceMappingURL=main.css.map */
