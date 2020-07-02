@@ -41,3 +41,20 @@ button {
 }
 
 
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 80px 950px 850px 1014px 750px 750px 552px 788px 462px;
+    grid-template-areas:    'header'
+                            'main'
+                            'promo'
+                            'features'
+                            'features__list'
+                            'gallery'
+                            'testimonials'
+                            'contact'
+                            'footer';
+    @media(max-width: $screen-lg){
+        grid-template-rows: auto;
+    }
+}
