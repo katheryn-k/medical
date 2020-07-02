@@ -575,6 +575,10 @@ button {
         outline: none;
         color: $purple__color;
         background: $white__color;
+        &:hover {
+            animation: pulse; 
+            animation-duration: 2s;
+        }
     }
 }
 .footer {

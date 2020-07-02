@@ -1203,6 +1203,13 @@ button {
   background: #fff;
 }
 
+.contact-us__btn:hover {
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 .footer {
   display: -ms-grid;
   display: grid;
