@@ -1,12 +1,12 @@
 const burgerMenu = document.querySelector('#toggleMenu');
 const navigation = document.querySelector('#navigation');
 
-/* burger menu */
+
 burgerMenu.onclick = () => {
     navigation.classList.toggle('header__nav-active');
 };
 
-/* slider */
+
 const btnRight = document.querySelector('#arrow-right');
 const slides = document.querySelectorAll('.testimonials-card__box');
 

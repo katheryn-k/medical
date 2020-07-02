@@ -342,9 +342,6 @@ template {
   display: none;
 }
 
-/* Media query */
-/* Colors */
-/* Common styles */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -365,7 +362,6 @@ button {
   cursor: pointer;
 }
 
-/* Mixins */
 .wrapper {
   display: -ms-grid;
   display: grid;
