@@ -54,7 +54,120 @@ button {
                             'testimonials'
                             'contact'
                             'footer';
-    @media(max-width: $screen-lg){
+    @media(max-width: $screen-lg) {
         grid-template-rows: auto;
+    }
+}
+.header {
+    position: fixed;
+    display: inline-grid;
+    min-width: 100%;
+    padding: 5px 0;
+    justify-content: center;
+    align-content: center;
+    grid-area: header;
+    opacity: 0.8;
+    background: $white__color;
+    z-index: 99;
+    @media(max-width: $screen-xl) {
+        padding: 20px 0;
+    }
+    &__wrapper {
+        display: inline-grid;
+        padding: 0.625em 0;
+        grid-template-columns: 1fr 1fr 0.4fr;
+        align-items: center;
+        justify-items: center;
+        @media(max-width: $screen-xl){
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    &__logo {
+        padding: 0 10px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: $dark-gray__color;
+        &::first-letter {
+            color: $light-blue__color;
+        }
+        @media(max-width: $screen-xl) {
+            display: none;
+        }
+    }
+    &__nav {
+        @media(max-width: $screen-xl) {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__nav-active {
+        display: flex;
+    }
+    &__nav__link {
+        margin-left: 20px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 30px;
+        color: $dark-gray__color;
+        transition: .3s all ease;
+        &:hover {
+            color: $purple__color;
+            animation: pulse; 
+            animation-duration: 2s;
+        }
+        @media (max-width: $screen-xl) {
+            position: relative;
+            top: 15px;
+            margin: 0;
+            padding: 5px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    }
+    &__burger {
+        display: none;
+        height: 50px;
+        padding: 5px;
+        background: transparent;
+        cursor: pointer;
+        &:hover {
+            animation: shakeX; 
+            animation-duration: 2s;
+        }
+        &::after {
+            content: "";
+            display: block;
+            width: 3.120em;
+            height: 2px;
+            margin: 10px 0;
+            background: $dark-gray__color;
+            cursor: pointer;
+        }
+        &::before {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 2px;
+            margin: 10px 0;
+            background: $dark-gray__color;
+            cursor: pointer;
+        }
+        @media(max-width: $screen-xl) {
+            position: absolute;
+            right: 100px;
+            top: 9px;
+            display: block;
+        }
+        @media(max-width: $screen-sm) {
+            position: absolute;
+            right: 30px;
+            top: 9px;
+            display: block;
+        }
     }
 }
