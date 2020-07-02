@@ -667,4 +667,136 @@ button {
   color: #fff;
   background: #6bc2f1;
 }
+
+.promo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: promo;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+}
+
+.promo__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (500px)[2];
+      grid-template-columns: repeat(2, 500px);
+      grid-template-areas: 'text__wrap img__wrap';
+  padding: 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .promo__wrapper {
+    padding: 50px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'text__wrap';
+  }
+}
+
+@media (max-width: 768px) {
+  .promo__wrapper {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .promo__wrapper {
+    padding: 20px 15px;
+  }
+}
+
+.promo__text__wrapper {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text__wrap;
+}
+
+@media (max-width: 576px) {
+  .promo__text__wrapper {
+    margin: 15px;
+  }
+}
+
+.promo__text_blue {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #6bc2f1;
+}
+
+.promo__title {
+  font-size: calc(16px + 15 * (100vw / 1280));
+  font-weight: 400;
+  line-height: 1.2;
+  color: #1b1b1b;
+}
+
+@media (max-width: 576px) {
+  .promo__title {
+    font-weight: 700;
+  }
+}
+
+.promo__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #1b1b1b;
+}
+
+@media (max-width: 768px) {
+  .promo__text {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .promo__text {
+    margin-bottom: 5px;
+  }
+}
+
+.promo__btn {
+  width: 200px;
+  margin: 30px 0 10px 0;
+  padding: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #6bc2f1;
+}
+
+.promo__btn:hover {
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.promo__img__wrapper {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img__wrap;
+}
+
+@media (max-width: 1200px) {
+  .promo__img__wrapper {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
