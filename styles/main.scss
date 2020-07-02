@@ -537,3 +537,42 @@ button {
         object-fit: fill;
     }
 }
+.contact-us {
+    grid-area: contact;
+    background: $white__color;
+    &__title__wrapper {
+        text-align: center;
+    }
+    &__title {
+        margin: 50px 10px 0 10px;
+        font-size: calc(22px + 14 * (100vw / 1280));
+        font-weight: 100;
+        color: $dark-gray__color;
+    }
+    &__form {
+        display: grid;
+        margin: 70px 10px;
+        grid-template-columns: minmax(200px, 400px);
+        align-items: center;
+        justify-content: center;
+    }
+    &__input {
+        margin: 10px 5px;
+        padding: 10px 20px;
+        border: 2px solid $turquoise__color;
+        outline: none;
+        resize: none;
+        color: $turquoise__color;
+    }
+    &__btn {
+        width: 150px;
+        margin: 20px auto;
+        padding: 10px;
+        text-transform: uppercase;
+        border: 2px solid $purple__color;
+        border-radius: 2px;
+        outline: none;
+        color: $purple__color;
+        background: $white__color;
+    }
+}

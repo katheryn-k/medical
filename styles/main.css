@@ -1148,4 +1148,57 @@ button {
   -o-object-fit: fill;
      object-fit: fill;
 }
+
+.contact-us {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: contact;
+  background: #fff;
+}
+
+.contact-us__title__wrapper {
+  text-align: center;
+}
+
+.contact-us__title {
+  margin: 50px 10px 0 10px;
+  font-size: calc(22px + 14 * (100vw / 1280));
+  font-weight: 100;
+  color: #252525;
+}
+
+.contact-us__form {
+  display: -ms-grid;
+  display: grid;
+  margin: 70px 10px;
+  -ms-grid-columns: minmax(200px, 400px);
+      grid-template-columns: minmax(200px, 400px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-us__input {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border: 2px solid #5BE7C4;
+  outline: none;
+  resize: none;
+  color: #5BE7C4;
+}
+
+.contact-us__btn {
+  width: 150px;
+  margin: 20px auto;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 2px solid #7A57D1;
+  border-radius: 2px;
+  outline: none;
+  color: #7A57D1;
+  background: #fff;
+}
 /*# sourceMappingURL=main.css.map */
