@@ -353,6 +353,7 @@ template {
 body {
   position: relative;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
