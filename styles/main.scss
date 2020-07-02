@@ -40,6 +40,20 @@ button {
     cursor: pointer;
 }
 
+/* Mixins */
+
+@mixin btn {
+    width: 200px;
+    margin: 30px 0 10px 0;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+}
+
 
 
 .wrapper {
@@ -168,6 +182,73 @@ button {
             right: 30px;
             top: 9px;
             display: block;
+        }
+    }
+}
+.main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-areas: 'main__wrap .';
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/images/bg_header.png) center center / cover no-repeat;
+    @media(max-width: $screen-xl) {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'main__wrap';
+    }
+    @media(max-width: $screen-sm) {
+        height: 100vh;
+    }
+    &__wrapper {
+        grid-area: main__wrap;
+        padding: 0 15px;
+        @media(max-width: $screen-xl) {
+            padding: 50px;
+        }
+        @media(max-width: $screen-md) {
+            padding: 60px;
+        }
+        @media(max-width: $screen-sm) {
+            padding: 10px 15px;
+        }
+    }
+    &__title {
+        font-size: calc(16px + 54 * (100vw / 1280));
+        font-weight: 400;
+        line-height: 1.2;
+        color: $white__color;
+    }
+    &__title_bold {
+        font-weight: 700;
+    }
+    &__subtitle {
+        font-size: calc(18px + 8 * (100vw / 1280));
+        font-weight: 400;
+        line-height: 1.2;
+        color: $white__color;
+    }
+    &__text__wrapper {
+        display: grid;
+        grid-template-columns: minmax(100px, 451px);
+    }
+    &__text {
+        font-size: calc(12px + 6 * (100vw / 1280));
+        font-weight: 400;
+        line-height: 30px;
+        color: $white__color;
+        @media(max-width: $screen-sm) {
+            display: none;
+        }
+    }
+    &__btn {
+        @include btn();
+        color: $light-blue__color;
+        background: $white__color;
+        transition: .3s all ease;
+        &:hover {
+            color: $white__color;
+            background: $light-blue__color;
         }
     }
 }
