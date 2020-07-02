@@ -407,3 +407,34 @@ button {
         line-height: 1.5;
     }
 }
+.features__list {
+    margin: auto;
+    grid-area: features__list;
+    background: $white__color;
+    &__wrapper {
+        width: 70%;
+        margin: auto;
+        row-gap: 15%;
+        @media(max-width: $screen-sm) {
+            width: 100%;
+            row-gap: 5%;
+        }
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        @media(max-width: $screen-sm) {
+           flex-direction: column;
+        }
+    }
+    &__item {
+        margin: 15px;
+        padding: 5px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    &__icon:hover {
+        animation: headShake;
+        animation-duration: 2s;
+    }
+}

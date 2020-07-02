@@ -926,4 +926,57 @@ button {
   font-size: calc(14px + 2 * (100vw / 1280));
   line-height: 1.5;
 }
+
+.features__list {
+  margin: auto;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: features__list;
+  background: #fff;
+}
+
+.features__list__wrapper {
+  width: 70%;
+  margin: auto;
+  row-gap: 15%;
+}
+
+@media (max-width: 576px) {
+  .features__list__wrapper {
+    width: 100%;
+    row-gap: 5%;
+  }
+}
+
+.features__list__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  .features__list__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.features__list__item {
+  margin: 15px;
+  padding: 5px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.features__list__icon:hover {
+  -webkit-animation: headShake;
+          animation: headShake;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
 /*# sourceMappingURL=main.css.map */
