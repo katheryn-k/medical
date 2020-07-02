@@ -576,3 +576,40 @@ button {
         background: $white__color;
     }
 }
+.footer {
+    display: grid;
+    grid-area: footer;
+    align-items: center;
+    color: $white__color;
+    background: $purple__color;
+    &__wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        @media(max-width: $screen-md) {
+            padding: 20px;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center; 
+        }
+    }
+    &__item-left {
+        width: 40%;
+        @media(max-width: $screen-md) {
+            width: 90%;
+        }
+    }
+    &__item-address {
+        display: flex;
+        width: 20%;
+        flex-direction: column;
+        @media(max-width: $screen-md) {
+            width: 90%;
+        }
+    }
+    &__link, &__address, &__text {
+        font-size: 14px;
+        line-height: 2;
+        color: $turquoise__color;
+    }
+}
