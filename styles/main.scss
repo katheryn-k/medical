@@ -326,3 +326,84 @@ button {
         }
     }
 }
+.features {
+    display: grid;
+    grid-area: features;
+    text-align: center;
+    color: $white__color;
+    background: $light-blue__color;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas: 'item_one item_two'
+                             'item_three item_four';
+        @media(max-width: $screen-sm) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 'item_one'
+                                 'item_two'
+                                 'item_three'
+                                 'item_four';
+            row-gap: 20px;
+        }
+    }
+    &__item_one {
+        grid-area: 'item_one';
+        background: url(../assets/images/promo/promo_doctors.png) center center / cover no-repeat;
+        transition: .3s all ease;
+        opacity: 0.8;
+        @media(max-width: $screen-sm) {
+            border: 25px solid $white__color;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__item_two {
+        display: flex;
+        grid-area: 'item_two';
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        @media(max-width: $screen-sm) {
+            padding: 10px;
+        }
+    }
+    &__item_three {
+        display: flex;
+        margin: auto;
+        grid-area: 'item_three';
+        flex-direction: column;
+        align-items: center;
+        @media(max-width: $screen-sm) {
+            padding: 10px;
+        }
+    }
+    &__item_four {
+        grid-area: 'item_four';
+        background: url(../assets/images/promo/promo_children.png) center center / cover no-repeat;
+        transition: .3s all ease;
+        opacity: 0.8;
+        @media(max-width: $screen-sm) { 
+            border: 25px solid $white__color;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__card {
+        padding: 10px;
+        font-size: 19px;
+        text-transform: uppercase;
+    }
+    &__title {
+        font-size: calc(19px + 14 * (100vw / 1280));
+        font-weight: 400;
+    }
+    &__text {
+        padding: 20px 15px;
+        font-size: calc(14px + 2 * (100vw / 1280));
+        line-height: 1.5;
+    }
+}
