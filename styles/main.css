@@ -979,4 +979,61 @@ button {
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
+
+.gallery_layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: gallery;
+  background: #5BE7C4;
+}
+
+.gallery_layout__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.gallery_layout__img {
+  width: 30%;
+  margin: 15px 0;
+  border: 15px solid transparent;
+}
+
+.gallery_layout__img:hover {
+  border: 15px solid #5BE7C4;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media (max-width: 576px) {
+  .gallery_layout__img {
+    width: 80%;
+    padding: 10px;
+    border: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */

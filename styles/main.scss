@@ -438,3 +438,32 @@ button {
         animation-duration: 2s;
     }
 }
+.gallery_layout {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    grid-area: gallery;
+    background: $turquoise__color;
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__img {
+        width: 30%;
+        margin: 15px 0;
+        border: 15px solid transparent;
+        &:hover {
+            border: 15px solid $turquoise__color;
+            transition: .3s all ease;
+            transform: scale(1.2);
+        }
+        @media(max-width: $screen-sm) {
+            width: 80%;
+            padding: 10px;
+            border: none;
+        }
+    }
+}
