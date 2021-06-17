@@ -1,23 +1,21 @@
-const burgerMenu = document.querySelector('#toggleMenu');
-const navigation = document.querySelector('#navigation');
+$(document).ready(function () {
+    // toggle menu ------
+    const $toggleBtn = $('#toggleMenu');
+    const $navbar = $('#navigation');
+    const $navbarOpen = 'navbar--open';
+    const $navbarItem = $('.navbar__item');
 
+    $toggleBtn.on('click', function (e) {
+        $navbar.toggleClass($navbarOpen);
+        e.preventDefault();
+    });
+    $($navbarItem).on('click', () => $navbar.removeClass($navbarOpen));
+    // end toggle menu ------
 
-burgerMenu.onclick = () => {
-    navigation.classList.toggle('header__nav-active');
-};
-
-
-const btnRight = document.querySelector('#arrow-right');
-const slides = document.querySelectorAll('.testimonials-card__box');
-
-let active = 0;
-
-btnRight.onclick = () => {
-    slides[active].classList.remove('testimonials-card__box_active');
-    active + 1 === slides.length ?
-    active = 0 :
-    active++;
-    slides[active].classList.add('testimonials-card__box_active');
-};
-
-
+    // slick slider ------
+    const $slickWrapper = $('.testimonials__list');
+    $($slickWrapper).slick({
+        dots: true
+    });
+    // end slick slider ------
+});
