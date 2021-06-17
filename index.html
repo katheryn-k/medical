@@ -1,309 +1,402 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical</title>
-    <!-- animate.css -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- main styles -->
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__wrapper">
-                <div class="header__logo">Medical</div>
-                <nav id="navigation" class="header__nav">
-                    <a href="#home" class="header__nav__link">Home</a>
-                    <a href="#about" class="header__nav__link">About us</a>
-                    <a href="#services" class="header__nav__link">Services</a>
-                    <a href="#portfolio" class="header__nav__link">Portfolio</a>
-                    <a href="#contact" class="header__nav__link">Contact</a>
-                </nav>
-                <span id="toggleMenu" class="header__burger"></span>
-            </div>
-        </header>
-        <main class="main" id="home">
-            <div class="main__wrapper">
-                <h1 class="main__title">
-                    The best doctors <br>
-                    in <span class="main__title_bold">Medicine!</span>
-                </h1>
-                <p class="main__subtitle">
-                    in the world of modern medicine!
-                </p>
-                <div class="main__text__wrapper">
-                    <p class="main__text">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Nisi recusandae tempora
-                        minus eligendi iusto deserunt similique nam 
-                        quisquam earum? Illo delectus porro laboriosam 
-                        vero eos incidunt.
-                    </p>
-                </div>
-                <button class="main__btn get-started__btn">
-                    Get started now
-                </button>
-            </div>
-        </main>
-        <section class="promo">
-            <div class="promo__wrapper">
-                <div class="promo__text__wrapper">
-                    <span class="promo__text_blue">
+<div class="page">
+    <header class="page-header">
+        <div class="page-header__container container">
+            <a class="page-header__logo" href="#top">
+                Medical
+            </a>
+            <nav class="page-header__navigation navbar" id="navigation">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#home">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#about">About us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#services">Services</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="page-header__toggle-btn btn-reset" id="toggleMenu">
+                <span class="page-header__toggle--element"></span>
+            </button>
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero__container container">
+            <h1 class="hero__title">
+                The best <br>
+                doctors <br>
+                in <b>Medicine!</b>
+            </h1>
+            <strong class="hero__subtitle">
+                In the world of modern medicine!
+            </strong>
+            <p class="hero__text">
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nisi recusandae tempora
+                minus eligendi iusto deserunt similique nam
+                quisquam earum? Illo delectus porro laboriosam
+                vero eos incidunt.
+            </p>
+            <button class="hero__btn btn--get-started">
+                Get started now
+            </button>
+        </div>
+    </section>
+    <main class="main">
+        <section class="promo" id="about">
+            <h2 class="visually-hidden">
+                Welcome to our clinic promo
+            </h2>
+            <div class="promo__container container">
+                <div class="promo__text-block">
+                    <p class="promo__text--blue">
                         Welcome to clinic
-                    </span>
-                    <h2 class="promo__title">
+                    </p>
+                    <h3 class="promo__subtitle">
                         Why you should choose us ?
-                    </h2>
-                    <article class="promo__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quia quis ipsa quidem, iste eligendi itaque pariatur voluptatum quasi, 
-                        nam harum repudiandae neque eos cumque reiciendis repellat velit, 
-                        dolorum eveniet! Impedit voluptatem excepturi incidunt labore facilis, 
-                        repudiandae suscipit autem illo, aspernatur facere ducimus necessitatibus 
+                    </h3>
+                    <p class="promo__text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quia quis ipsa quidem, iste eligendi itaque pariatur voluptatum quasi,
+                        nam harum repudiandae neque eos cumque reiciendis repellat velit,
+                        dolorum eveniet! Impedit voluptatem excepturi incidunt labore facilis,
+                        repudiandae suscipit autem illo, aspernatur facere ducimus necessitatibus
                         quae provident aliquam.
-                    </article>
-                    <button class="promo__btn get-started__btn">
+                    </p>
+                    <button class="promo__btn btn--get-started">
                         Get started now
                     </button>
                 </div>
-                <div class="promo__img__wrapper">
-                    <img src="./assets/images/doctor.png" alt="doctor">
-                </div>
             </div>
         </section>
-        <section class="features" id="about">
-            <div class="features__wrapper">
-                <div class="features__item features__item_one"></div>
-                <div class="features__item features__item_two">
-                    <span class="features__card">features</span>
-                    <h3 class="features__title">
-                        Professional surgeons
-                    </h3>
-                    <article class="features__text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing 
-                        elit. Incidunt ut odio delectus nisi expedita nesciunt 
-                        totam est recusandae iste hic illo animi modi aut, fugiat 
-                        nam ad quibusdam quam maiores. Sit, in tempore. Totam placeat 
-                        ipsam magni? Maiores cupiditate nihil voluptates ad aperiam enim 
-                        incidunt praesentium quam!
-                    </article>
-                </div>
-                <div class="features__item features__item_three">
-                    <span class="features__card">features</span>
-                    <h3 class="features__title">
-                        Emergency care for children
-                    </h3>
-                    <article class="features__text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing 
-                        elit. Incidunt ut odio delectus nisi expedita nesciunt 
-                        totam est recusandae iste hic illo animi modi aut, fugiat 
-                        nam ad quibusdam quam maiores. Sit, in tempore. Totam placeat 
-                        ipsam magni? Maiores cupiditate nihil voluptates ad aperiam enim 
-                        incidunt praesentium quam!
-                    </article>
-                </div>
-                <div class="features__item features__item_four"></div>
+        <section class="features">
+            <h2 class="visually-hidden">
+                Our features
+            </h2>
+            <div class="features__container container--full-width">
+                <ul class="features__list">
+                    <li class="features__item">
+                        <div class="features__text-block">
+                            <p class="features__text--uppercase">
+                                Features
+                            </p>
+                            <p class="features__text--subtitle">
+                                Professional surgeons
+                            </p>
+                            <p class="features__text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Incidunt ut odio delectus nisi expedita nesciunt totam est recusandae iste hic illo
+                                animi modi aut, fugiat nam ad quibusdam quam maiores.
+                                Sit, in tempore.
+                                Totam placeat ipsam magni? Maiores cupiditate nihil voluptates ad aperiam enim incidunt
+                                praesentium quam!
+                            </p>
+                        </div>
+                        <div class="features__img-block">
+                            <img class="features__img" src="./assets/images/promo/promo_doctors.png"
+                                 alt="Doctors on surgery">
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__text-block">
+                            <p class="features__text--uppercase">
+                                Features
+                            </p>
+                            <p class="features__text--subtitle">
+                                Emergency care for children
+                            </p>
+                            <p class="features__text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Incidunt ut odio delectus nisi expedita nesciunt totam est recusandae iste hic illo
+                                animi modi aut, fugiat nam ad quibusdam quam maiores.
+                                Sit, in tempore.
+                                Totam placeat ipsam magni? Maiores cupiditate nihil voluptates ad aperiam enim incidunt
+                                praesentium quam!
+                            </p>
+                        </div>
+                        <div class="features__img-block">
+                            <img class="features__img" src="./assets/images/promo/promo_children.png"
+                                 alt="Children after surgery">
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="features__list" id="services">
-            <div class="features__list__wrapper">
-                <div class="features__list__row">
-                    <div class="features__list__item">
-                        <img src="./assets/images/icons/pills_icon.png" alt="pills icon" class="features__list__icon">
-                        <h4 class="featutes__list__title">
+        <section class="services" id="services">
+            <h2 class="visually-hidden">
+                Our services
+            </h2>
+            <div class="services__container container">
+                <ul class="services__list">
+                    <li class="services__item">
+                        <img class="services__icon" src="./assets/images/icons/pills_icon.png" alt="Pills icon">
+                        <h3 class="services__subtitle">
                             Modern Medicines
-                        </h4>
-                        <p class="featutes__list__text">
-                            Lorem ipsum dolor sit, amet consectetur 
+                        </h3>
+                        <p class="services__text">
+                            Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Vero quibusdam ea animi.
                         </p>
-                    </div>
-                    <div class="features__list__item">
-                        <img src="./assets/images/icons/doc_icon.png" alt="doctor icon" class="features__list__icon">
-                        <h4 class="featutes__list__title">
+                    </li>
+                    <li class="services__item">
+                        <img class="services__icon" src="./assets/images/icons/doc_icon.png" alt="Doctor icon">
+                        <h3 class="services__subtitle">
                             Perfect Personal
-                        </h4>
-                        <p class="featutes__list__text">
-                            Lorem ipsum dolor sit, amet consectetur 
+                        </h3>
+                        <p class="services__text">
+                            Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Vero quibusdam ea animi.
                         </p>
-                    </div>
-                    <div class="features__list__item">
-                        <img src="./assets/images/icons/heart_icon.png" alt="heart icon" class="features__list__icon">
-                        <h4 class="featutes__list__title">
+                    </li>
+                    <li class="services__item">
+                        <img class="services__icon" src="./assets/images/icons/heart_icon.png" alt="Heart icon">
+                        <h3 class="services__subtitle">
                             Health Prevention
-                        </h4>
-                        <p class="featutes__list__text">
-                            Lorem ipsum dolor sit, amet consectetur 
+                        </h3>
+                        <p class="services__text">
+                            Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Vero quibusdam ea animi.
                         </p>
-                    </div>
-                </div>
-                <div class="features__list__row">
-                    <div class="features__list__item">
-                        <img src="./assets/images/icons/briefcase_icon.png" alt="briefcase icon" class="features__list__icon">
-                        <h4 class="featutes__list__title">
+                    </li>
+                    <li class="services__item">
+                        <img class="services__icon" src="./assets/images/icons/briefcase_icon.png" alt="Briefcase icon">
+                        <h3 class="services__subtitle">
                             First Medical Aid
-                        </h4>
-                        <p class="featutes__list__text">
-                            Lorem ipsum dolor sit, amet consectetur 
+                        </h3>
+                        <p class="services__text">
+                            Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Vero quibusdam ea animi.
                         </p>
-                    </div>
-                    <div class="features__list__item">
-                        <img src="./assets/images/icons/microscope_icon.png" alt="microscope icon" class="features__list__icon">
-                        <h4 class="featutes__list__title">
+                    </li>
+                    <li class="services__item">
+                        <img class="services__icon" src="./assets/images/icons/microscope_icon.png"
+                             alt="Microscope icon">
+                        <h3 class="services__subtitle">
                             Biological Analysis
-                        </h4>
-                        <p class="featutes__list__text">
-                            Lorem ipsum dolor sit, amet consectetur 
+                        </h3>
+                        <p class="services__text">
+                            Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Vero quibusdam ea animi.
                         </p>
-                    </div>
-                    <div class="features__list__item">
-                        <img src="./assets/images/icons/phone_icon.png" alt="phone icon" class="features__list__icon">
-                        <h4 class="featutes__list__title">
+                    </li>
+                    <li class="services__item">
+                        <img class="services__icon" src="./assets/images/icons/phone_icon.png" alt="Phone icon">
+                        <h3 class="services__subtitle">
                             Private Doctor
-                        </h4>
-                        <p class="featutes__list__text">
-                            Lorem ipsum dolor sit, amet consectetur 
+                        </h3>
+                        <p class="services__text">
+                            Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Vero quibusdam ea animi.
                         </p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="gallery_layout" id="portfolio">
-            <div class="gallery_layout__row">
-                <img src="./assets/images/gallery/gallery1.png" alt="doctors" class="gallery_layout__img">
-                <img src="./assets/images/gallery/gallery2.png" alt="scientist girl" class="gallery_layout__img">
-                <img src="./assets/images/gallery/gallery3.png" alt="medical supplies" class="gallery_layout__img">
-            </div>
-            <div class="gallery_layout__row">
-                <img src="./assets/images/gallery/gallery4.png" alt="children" class="gallery_layout__img">
-                <img src="./assets/images/gallery/gallery5.png" alt="medical operation" class="gallery_layout__img">
-                <img src="./assets/images/gallery/gallery6.png" alt="medical supplies" class="gallery_layout__img">
+        <section class="gallery" id="portfolio">
+            <h2 class="visually-hidden">
+                Our gallery
+            </h2>
+            <div class="gallery__container container--full-width">
+                <ul class="gallery__list">
+                    <li class="gallery__item">
+                        <img class="gallery__img" src="./assets/images/gallery/gallery1.png" alt="Doctors">
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__img" src="./assets/images/gallery/gallery2.png" alt="Scientist girl">
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__img" src="./assets/images/gallery/gallery3.png" alt="Medical supplies">
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__img" src="./assets/images/gallery/gallery4.png" alt="Children">
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__img" src="./assets/images/gallery/gallery5.png" alt="Medical operation">
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__img" src="./assets/images/gallery/gallery6.png" alt="Medical supplies">
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="testimonials">
-            <div class="testimonials__wrapper">
-                <div class="testimonials__slider">
-                    <span class="testimonials__slider-item testimonials__slider__arrow testimonials__slider__arrow-right">
-                        <img id="arrow-right" src="./assets/images/icons/forward.png" alt="arrow">
-                    </span>
-                </div>
-                <div class="testimonials-card__box testimonials-card__box_active">
-                    <p class="testimonials-card__review">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Iste at blanditiis, odit itaque accusantium ipsa similique 
-                        quae ab error culpa voluptas recusandae maiores fugiat eius 
-                        quam a corporis, cum rem labore.
-                    </p>
-                    <span class="testimonials-card__name">Jane Lee</span>
-                    <a class="testimonials-card__company" href="#">CEO TENGKUREP</a>
-                    <i class="testimonials-card__icon"><img class="testimonials-card__img" src="./assets/images/reviews/avatar1.png" alt="woman"></i>
-                </div>
-                <div class="testimonials-card__box">
-                    <p class="testimonials-card__review">
-                        Nor again is there anyone who loves or pursues 
-                        or desires to obtain pain of itself, because it is pain, 
-                        but because occasionally circumstances occur in which toil 
-                        and pain can procure him some great pleasure. 
-                    </p>
-                    <span class="testimonials-card__name">John Gilbert</span>
-                    <a class="testimonials-card__company" href="#">RAY INC</a>
-                    <i class="testimonials-card__icon"><img class="testimonials-card__img" src="./assets/images/reviews/avatar2.png" alt="men"></i>
-                </div>
-                <div class="testimonials-card__box">
-                    <p class="testimonials-card__review">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-                        quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                        dicta sunt explicabo.
-                    </p>
-                    <span class="testimonials-card__name">Kate Fisher</span>
-                    <a class="testimonials-card__company" href="#">CEO Fisher</a>
-                    <i class="testimonials-card__icon"><img class="testimonials-card__img" src="./assets/images/reviews/avatar3.png" alt="woman"></i>
-                </div>
-                <div class="testimonials-card__box">
-                    <p class="testimonials-card__review">
-                        On the other hand, we denounce with righteous indignation 
-                        and dislike men who are so beguiled and demoralized by the charms 
-                        of pleasure of the moment, so blinded by desire, that they cannot 
-                        foresee the pain and trouble that are bound to ensue; and equal blame.
-                    </p>
-                    <span class="testimonials-card__name">Billy May</span>
-                    <a class="testimonials-card__company" href="#">CEO Global Co.</a>
-                    <i class="testimonials-card__icon"><img class="testimonials-card__img" src="./assets/images/reviews/avatar4.png" alt="woman"></i>
-                </div>
-                <div class="testimonials-card__box">
-                    <p class="testimonials-card__review">
-                        But I must explain to you how all this mistaken 
-                        idea of denouncing pleasure and praising pain was born 
-                        and I will give you a complete account of the system, and 
-                        expound the actual teachings of the great explorer of the truth. 
-                    </p>
-                    <span class="testimonials-card__name">William Thomas</span>
-                    <a class="testimonials-card__company" href="#">You Can</a>
-                    <i class="testimonials-card__icon"><img class="testimonials-card__img" src="./assets/images/reviews/avatar5.png" alt="men"></i>
-                </div> 
+            <h2 class="visually-hidden">
+                Our reviews
+            </h2>
+            <div class="testimonials__container container">
+                <ul class="testimonials__list">
+                    <li class="testimonials__item testimonials__item--active">
+                        <blockquote class="testimonials-review">
+                            <p class="testimonials-review__text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Iste at blanditiis, odit itaque accusantium ipsa similique
+                                quae ab error culpa voluptas recusandae maiores fugiat eius
+                                quam a corporis, cum rem labore.
+                            </p>
+                            <cite class="testimonials-review__name">Jane Lee</cite>
+                            <p class="testimonials-review__position">Ceo Tengkurep</p>
+                            <img class="testimonials-review__img" src="./assets/images/reviews/avatar1.png"
+                                 alt="Jane Lee - Ceo Tengkurep">
+                        </blockquote>
+                    </li>
+                    <li class="testimonials__item">
+                        <blockquote class="testimonials-review">
+                            <p class="testimonials-review__text">
+                                Nor again is there anyone who loves or pursues
+                                or desires to obtain pain of itself, because it is pain,
+                                but because occasionally circumstances occur in which toil
+                                and pain can procure him some great pleasure.
+                            </p>
+                            <cite class="testimonials-review__name">John Gilbert</cite>
+                            <p class="testimonials-review__position">Ray Inc</p>
+                            <img class="testimonials-review__img" src="./assets/images/reviews/avatar2.png"
+                                 alt="John Gilbert - Ray Inc">
+                        </blockquote>
+                    </li>
+                    <li class="testimonials__item">
+                        <blockquote class="testimonials-review">
+                            <p class="testimonials-review__text">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                quae ab illo inventore veritatis et quasi architecto beatae vitae
+                                dicta sunt explicabo.
+                            </p>
+                            <cite class="testimonials-review__name">Kate Fisher</cite>
+                            <p class="testimonials-review__position">Сeo Fisher</p>
+                            <img class="testimonials-review__img" src="./assets/images/reviews/avatar3.png"
+                                 alt="Kate Fisher - Сeo Fisher">
+                        </blockquote>
+                    </li>
+                    <li class="testimonials__item">
+                        <blockquote class="testimonials-review">
+                            <p class="testimonials-review__text">
+                                On the other hand, we denounce with righteous indignation
+                                and dislike men who are so beguiled and demoralized by the charms
+                                of pleasure of the moment, so blinded by desire, that they cannot
+                                foresee the pain and trouble that are bound to ensue; and equal blame.
+                            </p>
+                            <cite class="testimonials-review__name">Billy May</cite>
+                            <p class="testimonials-review__position">Ceo Global Co.</p>
+                            <img class="testimonials-review__img" src="./assets/images/reviews/avatar4.png"
+                                 alt="Billy May - Ceo Global Co.">
+                        </blockquote>
+                    </li>
+                    <li class="testimonials__item">
+                        <blockquote class="testimonials-review">
+                            <p class="testimonials-review__text">
+                                But I must explain to you how all this mistaken
+                                idea of denouncing pleasure and praising pain was born
+                                and I will give you a complete account of the system, and
+                                expound the actual teachings of the great explorer of the truth.
+                            </p>
+                            <cite class="testimonials-review__name">William Thomas</cite>
+                            <p class="testimonials-review__position">You Can</p>
+                            <img class="testimonials-review__img" src="./assets/images/reviews/avatar5.png"
+                                 alt="William Thomas - You Can">
+                        </blockquote>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="contact-us" id="contact">
-            <div class="contact-us__title__wrapper">
-                <h4 class="contact-us__title">
+            <div class="contact-us__container container">
+                <h3 class="contact-us__title">
                     Contact us
-                </h4>
+                </h3>
+                <form class="contact-us__form" action="#">
+                    <label class="contact-us__label visually-hidden" for="name">Your Name</label>
+                    <input class="contact-us__input contact-us-name" type="text" name="name" id="name"
+                           placeholder="Name" pattern="^[ A-Za-z]{3,}" required>
+                    <label class="contact-us__label visually-hidden" for="email">Your Email</label>
+                    <input class="contact-us__input contact-us-email" type="email" name="email" id="email"
+                           placeholder="Email" required>
+                    <label class="contact-us__label visually-hidden" for="subject">Subject of message</label>
+                    <input class="contact-us__input contact-us-subject" type="text" name="subject" id="subject"
+                           placeholder="Subject">
+                    <label class="contact-us__label visually-hidden" for="message">Type your message</label>
+                    <textarea class="contact-us__input contact-us-message" name="message" id="message" cols="30"
+                              rows="10" required>Your message...</textarea>
+                    <input class="contact-us__btn btn-reset" type="submit" value="Submit">
+                </form>
             </div>
-            <form action="#" class="contact-us__form">
-                <input class="contact-us__input contact-us-name" type="text" name="name" id="nameInput" placeholder="Name" pattern="^[ A-Za-z]{3,}" required>
-                <input class="contact-us__input contact-us-email" type="email" name="email" id="emailInput" placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
-                <input class="contact-us__input contact-us-subject" type="text" name="subject" id="subjectInput" placeholder="Subject">
-                <textarea class="contact-us__input contact-us-message" name="message" id="message" cols="30" rows="10" required>Your message...</textarea>
-                <button class="contact-us__btn" type="submit">Submit</button>
-            </form>
         </section>
-        <footer class="footer">
-            <div class="footer__wrapper">
-                <div class="footer__item footer__item-left">
-                    <h5 class="footer__title">Medical</h5>
-                    <p class="footer__text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
-                        <br>
-                        Consequuntur voluptas iste voluptate laboriosam aliquid officiis. 
-                        Ratione veritatis quia amet dolor, molestiae accusamus quam a perspiciatis 
-                        quas cum pariatur sequi quisquam porro quis, est voluptas? Labore, quidem? 
-                        Odit eos aliquam labore, impedit pariatur tempore quod doloribus.
-                    </p>
-                </div>
-                <div class="footer__item footer__item-address">
-                    <h5 class="footer__title">New York</h5>
-                    <address class="footer__address">
-                        709 Honey Creek Dr.<br>
-                        New York <br>
-                        NY 10028
-                    </address>
-                    <a class="footer__link" href="tel:+18882993000">1-888-299-3000</a>
-                    <a class="footer__link" href="mailto:yourmail@company.com">yourmail@company.com</a>
-                </div>
-                <div class="footer__item footer__item-address">
-                    <h5 class="footer__title">London</h5>
-                    <address class="footer__address">
-                        4851 Willow Greene Drive <br>
-                        Montgomery <br>
-                        AL 36109
-                    </address>
-                    <a class="footer__link" href="tel:+18882992000">1-888-299-2000</a>
-                    <a class="footer__link" href="mailto:yourmail@ompany.com">yourmail@ompany.com</a>
-                </div>
+    </main>
+    <footer class="footer">
+        <h2 class="visually-hidden">
+            Our addresses
+        </h2>
+        <div class="footer__container container--full-width">
+            <div class="footer__inner footer__inner--text">
+                <b class="footer__subtitle">
+                    Medical
+                </b>
+                <p class="footer__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+                <p class="footer__text">
+                    Consequuntur voluptas iste voluptate laboriosam aliquid officiis.
+                    Ratione veritatis quia amet dolor, molestiae accusamus quam a perspiciatis quas
+                    cum pariatur sequi quisquam porro quis, est voluptas? Labore, quidem? Odit eos
+                    aliquam labore, impedit pariatur tempore quod doloribus.
+                </p>
             </div>
-        </footer>
-    </div>
-    <script src="./scripts/index.js"></script>
+            <div class="footer__inner footer__inner--new-york-ad">
+                <b class="footer__subtitle">
+                    New York
+                </b>
+                <address class="footer__address">
+                    <p>709 Honey Creek Dr.</p>
+                    <p>New York</p>
+                    <p>NY 10028</p>
+                </address>
+                <a class="footer__link" href="tel:+18882993000">1-888-299-3000</a>
+                <a class="footer__link" href="mailto:yourmail@company.com">yourmail@company.com</a>
+            </div>
+            <div class="footer__inner footer__inner--london-ad">
+                <b class="footer__subtitle">
+                    London
+                </b>
+                <address class="footer__address">
+                    <p>4851 Willow Drive</p>
+                    <p>Montgomery</p>
+                    <p>AL 36109</p>
+                </address>
+                <a class="footer__link" href="tel:+18882992000">1-888-299-2000</a>
+                <a class="footer__link" href="mailto:yourmail@ompany.com">yourmail@ompany.com</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="scripts/index.js"></script>
 </body>
-</html> 
+</html>
